@@ -1,0 +1,66 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #555;
+    z-index: 2000;
+    border-top: 1rpx solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.navbar navigator {
+    height: 115rpx;
+    width: 1%;
+}
+
+.navbar navigator>view {
+    width: 100%;
+    padding-top: 4rpx;
+}
+
+.navbar .navbar-icon {
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar .navbar-text {
+    font-size: 22rpx;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar+.after-navber {
+    padding-bottom: 115rpx;
+}
+
+.navbar~.float-icon,.navbar+.after-navber .float-icon {
+    bottom: 170rpx!important;
+}
+
+
+
+.navbar.device_iphone_x {
+    padding-bottom: 25rpx;
+}
+
+.navbar.device_iphone_x~.after-navber {
+    padding-bottom: 180rpx;
+}
+
+.page.show_navbar>.body {
+    padding-bottom: 115rpx;
+}
+
+.page.show_navbar.device_iphone_x>.header .navbar {
+    padding-bottom: 65rpx;
+}
+
+.page.show_navbar.device_iphone_x>.body {
+    padding-bottom: 180rpx;
+}

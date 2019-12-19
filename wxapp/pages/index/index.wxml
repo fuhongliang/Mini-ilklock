@@ -1,0 +1,153 @@
+<view class="page">
+  <view class="body after-navber">
+    <view class="index-banner flex-row">
+      <image class="index-bg" mode="aspectFill" src="/images/index_bg.png"></image>
+
+      <view style="position: absolute;left: 316rpx;top:30rpx;" class="flex-row">
+        <view class="flex-row link-status flex-x-center flex-y-center">
+          钥匙未连接
+        </view>
+      </view>
+
+      <view class="flex-row link-icon flex-x-center flex-y-center">
+        <view class="flex-y-center flex-x-center" style="width:245rpx;height:245rpx;background-image: url('/images/index_linking.png');background-repeat:no-repeat;background-size:cover;">
+          <text class="link-text">连接</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="index-option flex-row flex-y-center">
+
+      <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+          <view class="flex-x-center">
+            <image class="option-icon" src="/images/index_option_lock.png"></image>
+          </view>
+          <view class="flex-x-center text-more-2 option-name">
+            授权钥匙
+          </view>
+        </view>
+      </view>
+
+      <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+          <view class="flex-x-center">
+            <image class="option-icon" src="/images/index_option_link.png"></image>
+          </view>
+          <view class="flex-x-center text-more-2 option-name">
+            离线授权
+          </view>
+        </view>
+      </view>
+
+      <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+          <view class="flex-x-center">
+            <image class="option-icon" src="/images/index_option_record.png"></image>
+          </view>
+          <view class="flex-x-center text-more-2 option-name">
+            作业管理
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="record-list-title flex-row flex-y-center">
+      <view class="flex-grow-1 flex-y-center" style="padding-left: 29rpx;">
+        <text>操作记录</text>
+      </view>
+      <view class="flex-row-0">
+        <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+          <view class="flex flex-row">
+            <view style="margin-right: 12rpx">查看更多</view>
+            <view class="flex-y-center" style="padding-right: 30rpx;">
+              <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class="record-list">
+
+      <view class="flex-row record-item flex-y-center">
+        <view class="flex-grow-1">
+          <view class="flex-row item-title">
+            珠江市香洲区/锁的名字
+          </view>
+          <view class="flex-row item-time">
+            2019年08月29日 20:58:04
+          </view>
+        </view>
+        <view class="flex-row-0 record-action">
+          <text>开锁</text>
+        </view>
+      </view>
+
+      <view class="flex-row record-item flex-y-center">
+        <view class="flex-grow-1">
+          <view class="flex-row item-title">
+            珠江市香洲区/锁的名字
+          </view>
+          <view class="flex-row item-time">
+            2019年08月29日 20:58:04
+          </view>
+        </view>
+        <view class="flex-row-0 record-action">
+          <text>开锁</text>
+        </view>
+      </view>
+
+      <view class="flex-row record-item flex-y-center">
+        <view class="flex-grow-1">
+          <view class="flex-row item-title">
+            珠江市香洲区/锁的名字
+          </view>
+          <view class="flex-row item-time">
+            2019年08月29日 20:58:04
+          </view>
+        </view>
+        <view class="flex-row-0 record-action">
+          <text>开锁</text>
+        </view>
+      </view>
+
+      <view class="flex-row record-item flex-y-center">
+        <view class="flex-grow-1">
+          <view class="flex-row item-title">
+            珠江市香洲区/锁的名字
+          </view>
+          <view class="flex-row item-time">
+            2019年08月29日 20:58:04
+          </view>
+        </view>
+        <view class="flex-row-0 record-action">
+          <text>开锁</text>
+        </view>
+      </view>
+
+      <view class="flex-row record-item flex-y-center">
+        <view class="flex-grow-1">
+          <view class="flex-row item-title">
+            珠江市香洲区/锁的名字
+          </view>
+          <view class="flex-row item-time">
+            2019年08月29日 20:58:04
+          </view>
+        </view>
+        <view class="flex-row-0 record-action">
+          <text>开锁</text>
+        </view>
+      </view>
+
+    </view>
+
+
+
+
+  </view>
+  <include src="/commons/navbar/navbar"></include>
+</view>
+
+
+

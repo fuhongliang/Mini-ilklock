@@ -1,0 +1,11 @@
+<view class="navbar flex-row {{iLockDevice}}">
+  <block wx:for="{{iLockNavbar}}" wx:key="index">
+    <navigator  hover-class="none"  class="flex-grow-1 flex-y-center" data-open_type="{{item.open_type}}" openType="redirect" url="{{item.url}}">
+      <view>
+        <image class="navbar-icon" src="{{item.active?item.active_icon:item.icon}}"></image>
+        <view class="navbar-text" style="color: {{item.active?item.active_color:item.color}};">{{item.text}}
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
