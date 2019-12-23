@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/login/login",
+    "pages/mobile/mobile",
     "pages/logs/logs"
   ],
   "window": {

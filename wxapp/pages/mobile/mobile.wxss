@@ -1,0 +1,49 @@
+.bind-title {
+    padding-left: 30rpx;
+    color:#000000;
+    font-size: 54rpx;
+    font-weight: 500;
+    padding-top: 83rpx;
+}
+
+.bind-desc {
+    padding-top: 34rpx;
+    padding-left: 30rpx;
+    color:#999999;
+    font-size: 24rpx;
+}
+
+.form-content {
+    padding-top: 150rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.form-label {
+    color:#333333;
+    font-size:28rpx;
+}
+.form-row {
+    width: 100%;
+    border-bottom: #E6E6E6 1rpx solid;
+}
+.mobile-input,.code-input{
+    padding-bottom: 15rpx;
+    font-size:28rpx;
+    padding-top: 30rpx;
+}
+
+.get-code {
+    color:#00CA7C;
+    font-size:28rpx;
+}
+
+.bind-btn {
+    margin-top: 139rpx;
+    width:100%;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:44rpx;
+    color:#ffffff;
+    font-size:32rpx;
+}
