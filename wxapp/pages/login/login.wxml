@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="body">
+    <view class="flex-row logo-row">
+      <image src="/images/login/lock.png" style="width: 132rpx;height: 161rpx"></image>
+    </view>
+    <view class="flex-row" style="padding-top: 12rpx;">
+      <view class="flex-grow-1 text-row">
+        <view class="flex-row">
+          <view class="flex-grow-1">艾乐科无源碧锁</view>
+        </view>
+        <view class="flex-row">
+          <view class="flex-grow-1">智能管理</view>
+          </view>
+      </view>
+      <view class="flex-row-0 flex-y-bottom">
+        <image src="/images/login/icon.png" style="width: 185rpx;height: 188rpx;padding-right: 80rpx;"></image>
+      </view>
+    </view>
+    <view class="flex-row login-row">
+      <view class="flex-grow-0 reject-btn flex-x-center flex-y-center">
+        拒绝
+      </view>
+      <view class="flex-grow-0 accept-btn flex-x-center flex-y-center">
+        授权登录
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+.logo-row {
+    padding-left: 62rpx;
+    padding-top: 202rpx;
+}
+.text-row {
+    padding-top: 59rpx;
+    padding-left: 60rpx;
+    font-size: 54rpx;
+    color:#000000;
+    height: 131rpx;
+}
+
+.login-row {
+    padding-top: 192rpx;
+    padding-left: 30rpx;
+}
+
+.reject-btn {
+    width:330rpx;
+    height:88rpx;
+    background:rgba(230,230,230,1);
+    border-radius:8rpx;
+    color:#333333;
+    font-size: 32rpx;
+}
+
+.accept-btn {
+    margin-left: 30rpx;
+    width:330rpx;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:8rpx;
+    color:#ffffff;
+    font-size:32rpx;
+}
+
+
+
+
