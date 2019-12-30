@@ -20,9 +20,10 @@
       <view class="flex-grow-0 reject-btn flex-x-center flex-y-center">
         拒绝
       </view>
-      <view class="flex-grow-0 accept-btn flex-x-center flex-y-center">
+      <button open-type="getUserInfo" class="flex-grow-0 flex-x-center flex-y-center" bindgetuserinfo="login"
+              style="font-weight: 400;min-height:37rpx; margin-left: 30rpx;width:330rpx;height:88rpx;background:rgba(0,202,124,1);border-radius:8rpx; color:#ffffff;font-size:32rpx;">
         授权登录
-      </view>
+      </button>
     </view>
   </view>
 </view>

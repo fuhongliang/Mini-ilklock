@@ -1,0 +1,31 @@
+page {
+    background-color: #ffffff;
+}
+
+.icon-row {
+    margin-top: 123rpx;
+}
+
+.title-row {
+    height: 32rpx;
+    font-size: 34rpx;
+    color: #333333;
+    margin-top: 43rpx;
+}
+
+.sub-title-row {
+    margin-top: 30rpx;
+    height: 24rpx;
+    font-size: 24rpx;
+    color: #999999;
+}
+
+.return-btn {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    color:#ffffff;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:6rpx;
+    margin-top: 116rpx;
+}

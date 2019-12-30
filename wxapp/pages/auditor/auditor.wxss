@@ -1,0 +1,22 @@
+page {
+    background-color: #F6F6F6;
+}
+
+.item-row {
+    border-top: rgba(242,242,242,1) 1rpx solid;
+    background-color: #FEFEFE;
+    font-size: 30rpx;
+    color:#333333;
+    height: 88rpx;
+    padding-left: 30rpx;
+}
+
+
+.return-btn {
+    color:#ffffff;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:6rpx;
+    margin-top: 61rpx;
+}
+

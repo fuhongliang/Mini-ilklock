@@ -1,0 +1,20 @@
+<view class="page">
+    <view class="body">
+        <view class="flex-row flex-x-center icon-row">
+            <image src="/images/apply_submit_success.png" style="width: 248rpx;height: 217rpx"></image>
+        </view>
+
+        <view class="flex-row flex-x-center title-row">
+            <text>开锁申请提交成功</text>
+        </view>
+        <view class="flex-row flex-x-center sub-title-row">
+            <text>管理员将会审核您的申请，请耐心等待开锁通知</text>
+        </view>
+
+        <navigator style="padding-left:30rpx;padding-right:30rpx;" open-type="redirect" url="/pages/index/index">
+            <view class="flex-row flex-x-center flex-y-center return-btn">
+            <text>返回首页</text>
+        </view>
+        </navigator>
+    </view>
+</view>

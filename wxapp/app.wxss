@@ -81,4 +81,35 @@
 }
 
 
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 2222;
+  color: #fff;
+}
+
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  line-height:inherit;
+}
+
+button {
+  border-radius:0;
+}
+
+
+
 

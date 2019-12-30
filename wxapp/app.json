@@ -3,6 +3,11 @@
     "pages/index/index",
     "pages/login/login",
     "pages/mobile/mobile",
+    "pages/create_lock/create_lock",
+    "pages/apply_lock/apply_lock",
+    "pages/record/record",
+    "pages/apply_submit_success/apply_submit_success",
+    "pages/auditor/auditor",
     "pages/logs/logs"
   ],
   "window": {

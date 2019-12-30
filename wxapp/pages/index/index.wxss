@@ -85,3 +85,25 @@
   color:#999999;
   font-size: 24rpx;
 }
+
+.modal-title {
+  color:#333333;
+  font-size: 34rpx;
+  padding: 43rpx 230rpx 41rpx 230rpx;
+}
+
+.modal-dialog {
+  height: 730rpx;
+  width: 560rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 20%;
+  left:95rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  z-index: 9999;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+

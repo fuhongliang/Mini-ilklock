@@ -1,0 +1,36 @@
+page {
+    background-color: #F6F6F6;
+}
+
+.body {
+    font-size:30rpx;
+}
+.flex-row {
+    background-color: #ffffff;
+}
+
+.select-lock-row {
+    padding: 0rpx 30rpx;
+    border-top: rgba(229,229,229,1) 1rpx solid;
+    height: 88rpx;
+}
+
+.auditor-row {
+    padding: 0rpx 30rpx;
+    margin-top: 30rpx;
+    height: 88rpx;
+}
+
+.time-row {
+    padding: 0rpx 30rpx;
+    margin-top: 30rpx;
+    height: 88rpx;
+}
+
+.return-btn {
+    color:#ffffff;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:6rpx;
+    margin-top: 61rpx;
+}

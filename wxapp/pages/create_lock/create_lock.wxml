@@ -1,0 +1,59 @@
+<view class="page">
+    <view class="body">
+        <view class="flex-row lock-id flex-y-center">
+            <view class="flex-grow-1">
+                锁ID
+            </view>
+            <view class="flex-grow-0">
+                845487456456
+            </view>
+        </view>
+        <view class="flex-row area-row flex-y-center">
+            <view class="flex-grow-1">
+                锁所在区域
+            </view>
+            <view class="flex-row-0" style="color:#cccccc;">
+                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+                    <view class="flex flex-row">
+                        <view style="margin-right: 12rpx">请选择区域</view>
+                        <view class="flex-y-center">
+                            <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+
+        <view class="flex-row lock-name flex-y-center">
+            <view class="flex-grow-1">
+                锁名称
+            </view>
+            <view class="flex-grow-0">
+                <input  name="lock_name" placeholder="请输入锁名称" value="" placeholder-style="color:#cccccc;text-align:right;"></input>
+            </view>
+        </view>
+
+        <view class="flex-row area-row flex-y-center">
+            <view class="flex-grow-1">
+                审批人
+            </view>
+            <view class="flex-row-0" style="color:#cccccc;">
+                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+                    <view class="flex flex-row">
+                        <view style="margin-right: 12rpx">请选择审批人</view>
+                        <view class="flex-y-center">
+                            <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+
+        <view style="padding-left:30rpx;padding-right:30rpx;">
+            <view class="flex-row flex-x-center flex-y-center return-btn">
+                <text>提交申请</text>
+            </view>
+        </view>
+
+    </view>
+</view>

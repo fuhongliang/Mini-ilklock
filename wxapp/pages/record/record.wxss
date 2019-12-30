@@ -1,0 +1,22 @@
+page{
+    background-color: #F6F6F6;
+}
+.body {
+    height: 100%;
+    font-size:26rpx;
+}
+.record-item {
+    margin-top: 20rpx;
+    height: 222rpx;
+    padding-left: 29rpx;
+    background-color: #ffffff;
+}
+
+.item-label {
+    color:#999999;
+}
+.item-row {
+    height: 25rpx;
+    padding: 13rpx 0;
+}
+

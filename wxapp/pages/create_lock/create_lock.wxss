@@ -1,0 +1,37 @@
+page {
+    background-color: #F6F6F6;
+}
+
+.body {
+    font-size:30rpx;
+}
+.flex-row {
+    background-color: #ffffff;
+}
+
+.lock-id {
+    height: 88rpx;
+    border-top:#E5E5E5 1rpx solid;
+    padding: 0rpx 30rpx;
+    color:#333333;
+}
+.area-row {
+    padding: 0rpx 30rpx;
+    margin-top: 30rpx;
+    height: 88rpx;
+}
+
+.lock-name {
+    padding: 0rpx 30rpx;
+    margin-top: 30rpx;
+    height: 88rpx;
+}
+
+
+.return-btn {
+    color:#ffffff;
+    height:88rpx;
+    background:rgba(0,202,124,1);
+    border-radius:6rpx;
+    margin-top: 61rpx;
+}

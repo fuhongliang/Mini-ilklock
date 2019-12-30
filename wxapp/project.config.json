@@ -14,8 +14,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wx97c85095e6ca40a7",
-	"projectname": "艾乐科智能锁",
+	"appid": "wx2e32ee858cf18163",
+	"projectname": "%E8%89%BE%E4%B9%90%E7%A7%91%E6%99%BA%E8%83%BD%E9%94%81",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -57,6 +57,41 @@
 					"id": -1,
 					"name": "绑定手机号",
 					"pathName": "pages/mobile/mobile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增锁",
+					"pathName": "pages/create_lock/create_lock",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "操作记录",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请提交成功",
+					"pathName": "pages/apply_submit_success/apply_submit_success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择审批人",
+					"pathName": "pages/auditor/auditor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请开锁",
+					"pathName": "pages/apply_lock/apply_lock",
 					"scene": null
 				}
 			]

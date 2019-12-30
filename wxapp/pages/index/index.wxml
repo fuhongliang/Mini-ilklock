@@ -143,6 +143,19 @@
     </view>
 
 
+    <view>
+      <!-- modal弹窗-->
+      <modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+        <view class='modal-content'>
+          <scroll-view scroll-y class='main-content'>
+            <view>这里面可替换成你想显示的其他内容</view>
+            <view>这里面可替换成你想显示的其他内容</view>
+            <text>这里面可替换成你想显示的其他内容</text>
+          </scroll-view>
+        </view>
+      </modalView>
+    </view>
+
 
 
   </view>

@@ -2,26 +2,25 @@ import config from '../core/config'
 module.exports = {
   currentPage: null,
   currentPageOptions: {},
-  navbarPages: [ "pages/index/index",],
   app: getApp(),
 
   onLoad: function(that, options) {
-    console.log("--------pageOnLoad----------"); this.currentPage = that;
     this.currentPage = that; this.currentPageOptions = options;
     this.setDeviceInfo();
     this.setPageNavbar();
+    this.needToLogin();
   },
   onReady: function(that) {
-    console.log("--------pageOnReady----------"), this.currentPage = that;
+    this.currentPage = that;
   },
   onShow: function(that) {
-    console.log("--------pageOnShow----------"), this.currentPage = that;
+    this.currentPage = that;
   },
   onHide: function(that) {
-    console.log("--------pageOnHide----------"), this.currentPage = that;
+    this.currentPage = that;
   },
   onUnload: function(that) {
-    console.log("--------pageOnUnload----------"), this.currentPage = that;
+    this.currentPage = that;
   },
   onPullDownRefresh: function() {
   },
@@ -47,11 +46,46 @@ module.exports = {
   setPageNavbar: function() {
     let navs = config.iLockNavbar;
     let currentRoute = this.currentPage.route || null;
-    for (let n in navs) navs[n].url === "/" + currentRoute ? (navs[n].active = !0) : navs[n].active = !1;
+    for (let n in navs) navs[n].url === `/${currentRoute}` ? (navs[n].active = !0) : navs[n].active = !1;
     this.currentPage.setData({
       iLockNavbar:navs
     })
   },
+
+  needToLogin: function() {
+    // return;
+    let currentRoute = this.currentPage.route
+    let noNeedLoginPage = ["pages/login/login", "pages/mobile/mobile"];
+    let needLogin = true
+    for (let index in noNeedLoginPage) {
+      if (currentRoute === noNeedLoginPage[index]) {
+        needLogin = false
+        break;
+      }
+    }
+    if (needLogin === true) {
+      let access_token = wx.getStorageSync('access_token')
+      let user = wx.getStorageSync('user')
+      console.log('access_token', access_token)
+      if (!user) {
+        if (!access_token) {
+          //需要登录
+          return void wx.redirectTo({
+            url: "/pages/login/login"
+          });
+        } else {
+          //绑定手机号
+          wx.redirectTo({
+            url: '/pages/mobile/mobile'
+          })
+        }
+      }
+    }
+  }
+
+
+
+
 
 
 

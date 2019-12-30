@@ -10,16 +10,16 @@
     <view class="form-content">
       <view class="form-label flex-row flex-y-center">手机号码</view>
       <view class="form-row flex-row flex-y-center">
-        <input class="mobile-input" name="mobile" placeholder="请输入手机号码" value="" placeholder-style="color:#cccccc;"></input>
+        <input class="mobile-input" bindinput="keyMobile" name="mobile" placeholder="请输入手机号码" value="{{mobile}}" placeholder-style="color:#cccccc;"></input>
       </view>
 
       <view class="form-label flex-row flex-y-center" style="padding-top: 80rpx;">验证码</view>
       <view class="form-row flex-row flex-y-center">
-        <input class="code-input flex-grow-1" name="code" placeholder="请输入验证码" value="" placeholder-style="color:#cccccc;"></input>
-        <view class="flex-grow-0 get-code">获取验证码</view>
+        <input class="code-input flex-grow-1" bindinput="keyCode" name="code" placeholder="请输入验证码" value="{{code}}" placeholder-style="color:#cccccc;"></input>
+        <view bindtap="getCode" class="flex-grow-0 get-code">获取验证码</view>
       </view>
 
-      <view class="flex-row bind-btn flex-x-center flex-y-center">
+      <view bindtap="bindMobile" class="flex-row bind-btn flex-x-center flex-y-center">
         绑定手机号
       </view>
     </view>

@@ -31,7 +31,7 @@ module.exports = {
       "new_url": "/pages/user/user"
     },
     {
-      "url": "/pages/user/user",
+      "url": "/pages/record/record",
       "icon": "/images/navbar/record.png",
       "active_icon": "/images/navbar/record_active.png",
       "text": "操作记录",
