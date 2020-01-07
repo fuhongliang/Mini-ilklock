@@ -6,6 +6,9 @@
     "pages/create_lock/create_lock",
     "pages/apply_lock/apply_lock",
     "pages/record/record",
+    "pages/review/review",
+    "pages/area_lock/area_lock",
+    "pages/lock_list/lock_list",
     "pages/apply_submit_success/apply_submit_success",
     "pages/auditor/auditor",
     "pages/logs/logs"

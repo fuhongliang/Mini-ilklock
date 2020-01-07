@@ -1,10 +1,5 @@
 {
-  "navigationBarBackgroundColor": "#EBF5F1",
-  "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "首页",
-  "backgroundColor": "#FFFFFF",
-  "backgroundTextStyle": "light",
-
+  "navigationStyle":"custom",
   "usingComponents": {
     "modalView": "../../components/modal/modal"
   }

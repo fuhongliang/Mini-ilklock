@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "区域",
+  "backgroundColor": "#FFFFFF",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "modalView": "../../components/modal/modal"
+  }
+}

@@ -1,0 +1,84 @@
+page{
+    background-color: #F6F6F6;
+}
+.tab_bar_container{
+    width: 100%;
+    height: 88rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.tab-bar {
+    height: 88rpx;
+    width:1000rpx;
+}
+.tab-bar-item{
+    padding: 0 35rpx;
+}
+
+.tab-bar-item text {
+    font-size: 28rpx;
+    color: #999999;
+    padding: 20rpx 0;
+}
+
+.tab-bar-item.active text {
+    color: #000000;
+    border-bottom:4rpx solid #03D098;
+}
+
+.review-list {
+    margin-top: 110rpx;
+    background-color: #ffffff;
+}
+
+.review-list .item .wrap {
+    padding: 30rpx 30rpx;
+    border-bottom: 1rpx solid #F2F2F2;
+}
+
+.review-status {
+    font-size: 22rpx;
+    color:#36B6F9;
+    display:inline-block;
+    border:1rpx solid rgba(54, 182, 249, 1);
+    border-radius:6rpx;
+    padding: 7rpx 11rpx;
+    margin-left: 26rpx;
+}
+.review-title {
+    color:#333333;
+    font-size: 32rpx;
+    display: inline-block;
+}
+
+.review-time {
+    color:#999999;
+    font-size: 24rpx;
+}
+.sub-title {
+    padding-top: 20rpx;
+    color:#666666;
+    font-size: 26rpx;
+}
+
+
+
+.float-icon {
+    position: fixed;
+    z-index: 20;
+    right: 40rpx;
+    bottom: 150rpx;
+}
+
+.page.show_navbar.device_iphone_x>.body .float-icon {
+    bottom: 215rpx;
+}
+
+
+
+

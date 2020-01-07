@@ -1,0 +1,51 @@
+<view class="index-banner">
+<image class="index-bg" mode="aspectFill" src="/images/index_bg_active.png"></image>
+<view style="color:#FFFFFF;font-size:36rpx;padding-top:67rpx;">
+    <view class="flex-row flex-y-center flex-x-center">首页</view>
+</view>
+<view class="link-status-row">
+    <view class="flex-row flex-x-center flex-y-center">
+        <view style="color:#ffffff;font-size:24rpx;">
+            钥匙已连接
+        </view>
+    </view>
+</view>
+<view class="link-icon">
+    <view class="flex-row flex-x-center flex-y-center">
+        <image src="/images/index_linked.png" style="width:245rpx;height:245rpx;"></image>
+    </view>
+</view>
+</view>
+
+<view class="index-option flex-row flex-y-center">
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_lock_active.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name active">
+                授权钥匙
+            </view>
+        </view>
+    </view>
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_link_active.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name active">
+                离线授权
+            </view>
+        </view>
+    </view>
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_record_active.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name active">
+                作业管理
+            </view>
+        </view>
+    </view>
+</view>

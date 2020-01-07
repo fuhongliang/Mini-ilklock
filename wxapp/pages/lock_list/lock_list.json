@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "选择锁",
+  "backgroundColor": "#FFFFFF",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "modalView": "../../components/modal/modal"
+  }
+}

@@ -4,30 +4,32 @@
             <view class="flex-grow-1">
                 锁
             </view>
-            <view class="flex-row-0" style="color:#cccccc;">
-                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+            <view bindtap="selectLock" class="flex-row-0" style="color:#cccccc;">
+                <view class="flex flex-row flex-y-center">
                     <view class="flex flex-row">
-                        <view style="margin-right: 12rpx">请选择锁</view>
+                        <view wx:if="{{!locks_id}}" style="margin-right: 12rpx">请选择锁</view>
+                        <view wx:else style="margin-right: 12rpx;color:#333333;">已选择{{locks_id.length}}把锁</view>
                         <view class="flex-y-center">
                             <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
                         </view>
                     </view>
-                </navigator>
+                </view>
             </view>
         </view>
         <view class="flex-row auditor-row flex-y-center">
             <view class="flex-grow-1">
                 审批人
             </view>
-            <view class="flex-row-0" style="color:#cccccc;">
-                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+            <view bindtap="selectAuditor" class="flex-row-0" style="color:#cccccc;">
+                <view class="flex flex-row flex-y-center" url="/pages/index/index">
                     <view class="flex flex-row">
-                        <view style="margin-right: 12rpx">请选择审批人</view>
+                        <view wx:if="{{!auditor_name}}" style="margin-right: 12rpx">请选择审批人</view>
+                        <view wx:else style="margin-right: 12rpx;color:#333333;">{{auditor_name}}</view>
                         <view class="flex-y-center">
                             <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
                         </view>
                     </view>
-                </navigator>
+                </view>
             </view>
         </view>
 

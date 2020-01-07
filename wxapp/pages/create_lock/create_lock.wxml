@@ -5,22 +5,26 @@
                 锁ID
             </view>
             <view class="flex-grow-0">
-                845487456456
+                {{lock_no}}
             </view>
         </view>
+
         <view class="flex-row area-row flex-y-center">
             <view class="flex-grow-1">
                 锁所在区域
             </view>
             <view class="flex-row-0" style="color:#cccccc;">
-                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
-                    <view class="flex flex-row">
-                        <view style="margin-right: 12rpx">请选择区域</view>
-                        <view class="flex-y-center">
-                            <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+                <view class="flex flex-row flex-y-center">
+                    <picker mode="multiSelector"  bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range-key="name" value="{{multiIndex}}" range="{{multiArray}}">
+                        <view class='flex flex-row'>
+                            <view wx:if="{{!multiArray[0][multiIndex[0]]}}" style="margin-right: 12rpx">请选择区域</view>
+                            <view wx:else style="margin-right: 12rpx;color:#333333;">{{multiArray[0][multiIndex[0]]['name']}} {{multiArray[1][multiIndex[1]]['name']}}</view>
+                            <view class="flex-y-center">
+                                <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+                            </view>
                         </view>
-                    </view>
-                </navigator>
+                    </picker>
+                </view>
             </view>
         </view>
 
@@ -29,31 +33,16 @@
                 锁名称
             </view>
             <view class="flex-grow-0">
-                <input  name="lock_name" placeholder="请输入锁名称" value="" placeholder-style="color:#cccccc;text-align:right;"></input>
-            </view>
-        </view>
-
-        <view class="flex-row area-row flex-y-center">
-            <view class="flex-grow-1">
-                审批人
-            </view>
-            <view class="flex-row-0" style="color:#cccccc;">
-                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
-                    <view class="flex flex-row">
-                        <view style="margin-right: 12rpx">请选择审批人</view>
-                        <view class="flex-y-center">
-                            <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
-                        </view>
-                    </view>
-                </navigator>
+                <input bindinput="keyLockName" name="lock_name" placeholder="请输入锁名称" value="{{lock_name}}" placeholder-style="color:#cccccc;text-align:right;"></input>
             </view>
         </view>
 
         <view style="padding-left:30rpx;padding-right:30rpx;">
-            <view class="flex-row flex-x-center flex-y-center return-btn">
+            <view bindtap="createLock" class="flex-row flex-x-center flex-y-center return-btn">
                 <text>提交申请</text>
             </view>
         </view>
+
 
     </view>
 </view>

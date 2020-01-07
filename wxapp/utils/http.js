@@ -20,6 +20,9 @@ let access_sign = md5(md5(nonce_str+app_secret)+access_time);
 
 const http = (params) => {
   //添加签名
+  if (!params.data) {
+    params.data = {};
+  }
   params.data.app_key = app_key;
   params.data.nonce_str = nonce_str;
   params.data.access_time = access_time;
@@ -28,6 +31,11 @@ const http = (params) => {
   if (access_token) {
     params.data.access_token = access_token
   }
+  let user = wx.getStorageSync('user');
+  if (user) {
+    params.data.user_id = user.id;
+  }
+
   return new Promise((resolve, reject) => {
     wx.request({
       url: apiUrl + params.url,//服务器url+参数中携带的接口具体地址
@@ -40,6 +48,11 @@ const http = (params) => {
       responseType: params.responseType,//响应的数据类型
       success: function(res) {
         if (res.statusCode === 200) {
+          if (res.data.code === -1) {
+            wx.redirectTo({
+              url: '/pages/login/login'
+            })
+          }
           resolve(res.data)
         } else {
           console.log(res.data)

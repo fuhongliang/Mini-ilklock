@@ -1,0 +1,43 @@
+<!-- modal弹窗-->
+<modalView cancelBtn="{{cancelBtn}}" confirmBtn="{{confirmBtn}}"
+           show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+        <scroll-view scroll-y class='main-content'>
+            <view style="padding:40rpx 0;color:#333333;font-size:34rpx;">
+                <view class="flex-row flex-y-center flex-x-center">
+                    温馨提示
+                </view>
+            </view>
+            <view style="color:#999999;font-size:26rpx;">
+                <view class="flex-row flex-x-center flex-y-center">
+                    授权门锁时需要打开蓝牙服务
+                </view>
+            </view>
+            <view style="color:#999999;font-size:26rpx;padding-top:20rpx;">
+                <view class="flex-row flex-x-center flex-y-center">
+                    否则部分功能无法正常使用
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</modalView>
+
+<modalView cancelBtn="{{cancelBtn}}" confirmBtn="{{allowLinkBtn}}"
+           show="{{showLinkModal}}" bindcancel="cancelLinkModal" bindconfirm='confirmLinkModal' single='{{single}}'>
+    <view class='modal-content'>
+        <scroll-view scroll-y class='main-content'>
+            <view style="padding:40rpx 0;color:#333333;font-size:34rpx;">
+                <view class="flex-row flex-y-center flex-x-center">
+                    连接钥匙
+                </view>
+            </view>
+            <view style="color:#999999;font-size:26rpx;">
+                <view class="flex-row flex-x-center flex-y-center">
+                    蓝牙已打开，请选择授权连接钥匙
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</modalView>
+
+

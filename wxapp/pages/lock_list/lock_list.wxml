@@ -1,0 +1,51 @@
+<view class="page">
+    <view class="body after-navber">
+        <view class="tab_bar_container">
+            <scroll-view scroll-x="true">
+                <view class="flex-row flex-y-center tab-bar">
+                    <block wx:for="{{firstArea}}" wx:for-index="idx" wx:for-item="value">
+                        <view bindtap="clickFirst" data-id="{{value.id}}" class="tab-bar-item {{value.id===active_id ? 'active' : ''}}">
+                            <text>{{value.name}}</text>
+                        </view>
+                    </block>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="area-list">
+            <view class="item" wx:for="{{secondArea}}" wx:for-index="idx" wx:for-item="value">
+                <view class="wrap">
+                    <view bindtap="getLocks" data-id="{{value.id}}" class="flex-row flex-y-center">
+                        <view class="flex-grow-1 flex-y-center">
+                            {{value.name}}
+                        </view>
+                        <view class="flex-grow-0">
+                            <view class="flex flex-row flex-y-center">
+                                <image wx:if="{{showList[value.id] === true}}" src="/images/icon_down.png" style="width: 25rpx;height: 16rpx;"></image>
+                                <image wx:else  src="/images/icon_left2.png" style="width: 16rpx;height: 25rpx;"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <block wx:if="{{lockList[value.id].length > 0 && showList[value.id] === true}}">
+                    <view class="flex-row flex-y-center">
+                        <view class="flex-grow-1 flex-y-center" style="flex-wrap:wrap;margin-left:30rpx">
+                            <block wx:for="{{lockList[value.id]}}" wx:for-index="index" wx:for-item="item">
+                                <view bindtap="clickLockName" data-id="{{item.id}}" data-name="{{item.name}}"
+                                      class="flex-x-center flex-y-center lock-name-row {{item.selected === true ? 'active' : ''}}">
+                                    {{item.name}}
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                </block>
+                <view wx:if="{{showList[value.id] === true && lockList[value.id].length <= 0}}" class="flex-row flex-y-center flex-x-center" style="padding:20rpx;color:#cccccc;">
+                    暂无数据
+                </view>
+            </view>
+        </view>
+
+        <view bindtap="confirmSelect" class="flex-row flex-x-center flex-y-center" style="font-size:32rpx;background-color:#00CA7C;color:#ffffff;padding:30rpx 0;">
+            确定
+        </view>
+    </view>
+</view>

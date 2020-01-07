@@ -1,0 +1,53 @@
+<view class="index-banner">
+<image class="index-bg" mode="aspectFill" src="/images/index_bg.png"></image>
+<view style="color:#333333;font-size:36rpx;padding-top:67rpx;">
+    <view class="flex-row flex-y-center flex-x-center">首页</view>
+</view>
+<view class="link-status-row">
+    <view class="flex-row flex-x-center flex-y-center">
+        <view style="color:#A1AEA9;font-size:24rpx;">
+            钥匙未连接
+        </view>
+    </view>
+</view>
+<view class="link-icon" bindtap="clickLink">
+    <view class="flex-row flex-x-center flex-y-center">
+        <view class="flex-row flex-x-center flex-y-center link-text" style="width:245rpx;height:245rpx;background-image: url('https://ifhushequ-test.oss-cn-beijing.aliyuncs.com/index_linking.png');background-repeat:no-repeat;background-size:cover;">
+            连接
+        </view>
+    </view>
+</view>
+</view>
+
+<view class="index-option flex-row flex-y-center">
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_lock.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name">
+                授权钥匙
+            </view>
+        </view>
+    </view>
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_link.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name">
+                离线授权
+            </view>
+        </view>
+    </view>
+    <view class="flex-grow-0" style="width: 33.3%;">
+        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+            <view class="flex-x-center">
+                <image class="option-icon" src="/images/index_option_record.png"></image>
+            </view>
+            <view class="flex-x-center text-more-2 option-name">
+                作业管理
+            </view>
+        </view>
+    </view>
+</view>

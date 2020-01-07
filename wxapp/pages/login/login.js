@@ -61,7 +61,7 @@ Page({
                     wx.setStorageSync('nickname', data.data.nickname)
                     wx.setStorageSync('user', data.data.user)
                     wx.redirectTo({
-                      url: 'pages/index/index'
+                      url: '/pages/index/index'
                     })
                   }
                 })

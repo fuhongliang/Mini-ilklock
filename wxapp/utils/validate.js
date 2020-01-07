@@ -5,6 +5,12 @@ let validate ={
     },
     validCode:function (code) {
         return /^\d{6}$/.test(code)
+    },
+    required:function(value) {
+        return !(value.replace(/\s+/g, "").length===0);
+    },
+    isInt:function(value) {
+        return /^\+?[1-9][0-9]*$/.test(value);
     }
 
 }

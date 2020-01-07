@@ -10,7 +10,7 @@
     top: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 999;
+    z-index: 9999;
 }
 /*遮罩内容*/
 .modal-content{
@@ -31,6 +31,7 @@
 }
 /*底部按钮*/
 .modal-footer{
+    background-color: #FEFEFE;
     display: flex;
     flex-direction: row;
     height: 80rpx;

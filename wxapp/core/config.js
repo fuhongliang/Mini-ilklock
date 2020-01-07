@@ -8,27 +8,24 @@ module.exports = {
       "color": "#999999",
       "active_color": "#00CA7C",
       "open_type": "",
-      "new_url": "/pages/index/index"
     },
     {
-      "url": "/pages/cart/cart",
+      "url": "/pages/review/review",
       "icon": "/images/navbar/apply.png",
       "active_icon": "/images/navbar/apply_active.png",
       "text": "审批",
       "color": "#999999",
       "active_color": "#00CA7C",
       "open_type": "",
-      "new_url": "/pages/cart/cart"
     },
     {
-      "url": "/pages/user/user",
+      "url": "/pages/area_lock/area_lock",
       "icon": "/images/navbar/area.png",
       "active_icon": "/images/navbar/area_active.png",
       "text": "区域",
       "color": "#999999",
       "active_color": "#00CA7C",
       "open_type": "",
-      "new_url": "/pages/user/user"
     },
     {
       "url": "/pages/record/record",
@@ -38,7 +35,6 @@ module.exports = {
       "color": "#999999",
       "active_color": "#00CA7C",
       "open_type": "",
-      "new_url": "/pages/user/user"
     }
     ]
 

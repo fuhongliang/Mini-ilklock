@@ -1,33 +1,23 @@
 <view class="page">
     <view class="body">
 
-        <view class="flex-row item-row flex-y-center">
-            <view class="flex-grow-1 flex-y-center">
-                <text>张雪林</text>
-            </view>
-            <view class="flex-row-0">
-                <view class="flex flex-row">
-                    <view class="flex-y-center" style="padding-right:30rpx;">
-                        <image src="/images/arrow_active.png" style="width: 25rpx;height: 17rpx;"></image>
+        <block wx:for="{{auditors}}" wx:for-index="idx" wx:for-item="value">
+            <view bindtap="selectAuditor" data-id="{{value.audit_id}}" data-name="{{value.name}}" class="flex-row item-row flex-y-center">
+                <view class="flex-grow-1 flex-y-center">
+                    <text>{{value.name}}</text>
+                </view>
+                <view class="flex-row-0">
+                    <view class="flex flex-row" wx:if="{{value.selected === true}}">
+                        <view class="flex-y-center" style="padding-right:30rpx;">
+                            <image src="/images/arrow_active.png" style="width: 25rpx;height: 17rpx;"></image>
+                        </view>
                     </view>
                 </view>
             </view>
-        </view>
+        </block>
 
-        <view class="flex-row item-row flex-y-center">
-            <view class="flex-grow-1 flex-y-center">
-                <text>张雪林</text>
-            </view>
-            <view class="flex-row-0">
-                <view class="flex flex-row">
-                    <view class="flex-y-center" style="padding-right:30rpx;">
-                        <image src="/images/arrow_active.png" style="width: 25rpx;height: 17rpx;"></image>
-                    </view>
-                </view>
-            </view>
-        </view>
 
-        <view style="padding-left:30rpx;padding-right:30rpx;">
+        <view bindtap="confirmSelect" style="padding-left:30rpx;padding-right:30rpx;">
             <view class="flex-row flex-x-center flex-y-center return-btn">
                 <text>确定</text>
             </view>
