@@ -35,17 +35,35 @@
 
         <view class="flex-row time-row flex-y-center">
             <view class="flex-grow-1">
-                有效时间
+                开始时间
             </view>
             <view class="flex-row-0" style="color:#cccccc;">
-                <navigator class="flex flex-row flex-y-center" url="/pages/index/index">
+                <view bindtap="showStartPopup" class="flex flex-row flex-y-center" url="/pages/index/index">
                     <view class="flex flex-row">
-                        <view style="margin-right: 12rpx">请选择时间</view>
+                        <view wx:if="{{!start_date}}" style="margin-right: 12rpx">请选择时间</view>
+                        <view wx:else style="margin-right: 12rpx;color:#333333;">{{start_date}}</view>
                         <view class="flex-y-center">
                             <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
                         </view>
                     </view>
-                </navigator>
+                </view>
+            </view>
+        </view>
+
+        <view class="flex-row time-row flex-y-center">
+            <view class="flex-grow-1">
+                结束时间
+            </view>
+            <view class="flex-row-0" style="color:#cccccc;">
+                <view bindtap="showEndPopup" class="flex flex-row flex-y-center" url="/pages/index/index">
+                    <view class="flex flex-row">
+                        <view wx:if="{{!end_date}}" style="margin-right: 12rpx">请选择时间</view>
+                        <view wx:else style="margin-right: 12rpx;color:#333333;">{{end_date}}</view>
+                        <view class="flex-y-center">
+                            <image src="/images/icon_left.png" style="width: 14rpx;height: 22rpx;"></image>
+                        </view>
+                    </view>
+                </view>
             </view>
         </view>
 
@@ -54,6 +72,39 @@
                 <text>提交申请</text>
             </view>
         </view>
+
+        <van-popup
+                position="bottom"
+                show="{{startShow}}"
+                bind:close="closeStartPopup">
+            <van-datetime-picker
+                    type="datetime"
+                    value="{{ currentDate }}"
+                    min-date="{{ minDate }}"
+                    max-date="{{ maxDate }}"
+                    formatter="{{ formatter }}"
+                    bind:input="startOnInput"
+                    bind:confirm="confirmStartDate"
+                    bind:cancel="cancelStartDate"
+            />
+        </van-popup>
+
+        <van-popup
+                position="bottom"
+                show="{{endShow}}"
+                bind:close="closeEndPopup">
+            <van-datetime-picker
+                    type="datetime"
+                    value="{{ currentDate }}"
+                    min-date="{{ minDate }}"
+                    max-date="{{ maxDate }}"
+                    formatter="{{ formatter }}"
+                    bind:input="endOnInput"
+                    bind:confirm="confirmEndDate"
+                    bind:cancel="cancelEndDate"
+            />
+        </van-popup>
+
 
     </view>
 </view>

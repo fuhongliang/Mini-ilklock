@@ -3,5 +3,9 @@
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "申请锁",
   "backgroundColor": "#FFFFFF",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-datetime-picker": "/components/vant/datetime-picker/index",
+    "van-popup": "/components/vant/popup/index"
+  }
 }

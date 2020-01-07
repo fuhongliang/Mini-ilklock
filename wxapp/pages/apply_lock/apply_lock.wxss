@@ -1,6 +1,9 @@
 page {
     background-color: #F6F6F6;
+
+    --picker-action-text-color:#00CA7C;
 }
+
 
 .body {
     font-size:30rpx;
