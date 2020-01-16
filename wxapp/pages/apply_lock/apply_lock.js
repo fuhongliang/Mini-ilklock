@@ -128,7 +128,41 @@ Page({
                 res.eventChannel.emit('acceptDataFromOpenerPage', that.data)
             }
         })
-    }
+    },
+
+    submitApply: function() {
+        if (app.validate.required(this.data.locks_id) === false) {
+            return void app.message.warning('请选择锁')
+        }
+        if (app.validate.required(this.data.auditor_id) === false) {
+            return void app.message.warning('请选择审批人')
+        }
+        if (app.validate.required(this.data.start_date) === false) {
+            return void app.message.warning('请选择开始时间')
+        }
+        if (app.validate.required(this.data.end_date) === false) {
+            return void app.message.warning('请选择结束时间')
+        }
+        wx.showLoading({
+            title: '加载中',
+        });
+        app.api.lock.applyOpenLock({
+            locks:this.data.locks_id,
+            start_time:this.data.start_date,
+            end_time:  this.data.end_date,
+            audit_id: this.data.auditor_id
+        }).then(data => {
+                if (data.code === 0) {
+                    app.message.success('提交成功')
+                    wx.redirectTo({
+                        url: '/pages/apply_submit_success/apply_submit_success'
+                    })
+                } else {
+                    wx.hideLoading({})
+                    return void app.message.warning(data.msg)
+                }
+            });
+    },
 
 
 

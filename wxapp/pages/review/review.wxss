@@ -43,9 +43,7 @@ page{
 
 .review-status {
     font-size: 22rpx;
-    color:#36B6F9;
     display:inline-block;
-    border:1rpx solid rgba(54, 182, 249, 1);
     border-radius:6rpx;
     padding: 7rpx 11rpx;
     margin-left: 26rpx;

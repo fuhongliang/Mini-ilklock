@@ -11,6 +11,8 @@
     "pages/lock_list/lock_list",
     "pages/apply_submit_success/apply_submit_success",
     "pages/auditor/auditor",
+    "pages/work/work",
+    "pages/auth_key/auth_key",
     "pages/logs/logs"
   ],
   "window": {

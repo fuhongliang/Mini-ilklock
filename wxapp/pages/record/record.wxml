@@ -2,11 +2,11 @@
     <view class="body after-navber">
         <view class="record-item">
             <view class="flex-row item-row">
-                <span class="item-label">开 锁 人：</span>
-                <span class="item-value">深圳市古力开锁有限公司（张三）</span>
+                <span class="item-label">锁所在区域：</span>
+                <span class="item-value">深圳市宝安区新安三路</span>
             </view>
             <view class="flex-row item-row">
-                <span class="item-label">开锁时间：</span>
+                <span class="item-label">操作时间：</span>
                 <span class="item-value">2019-11-11 10:25:28</span>
             </view>
             <view class="flex-row item-row">
@@ -14,17 +14,17 @@
                 <span class="item-value">785469215863</span>
             </view>
             <view class="flex-row item-row">
-                <span class="item-label">锁所在区域：</span>
-                <span class="item-value">深圳市宝安区新安三路</span>
+                <span class="item-label">动作：</span>
+                <span class="item-value">开锁</span>
             </view>
         </view>
         <view class="record-item">
             <view class="flex-row item-row">
-                <span class="item-label">开 锁 人：</span>
-                <span class="item-value">深圳市古力开锁有限公司（张三）</span>
+                <span class="item-label">锁所在区域：</span>
+                <span class="item-value">深圳市宝安区新安三路</span>
             </view>
             <view class="flex-row item-row">
-                <span class="item-label">开锁时间：</span>
+                <span class="item-label">操作时间：</span>
                 <span class="item-value">2019-11-11 10:25:28</span>
             </view>
             <view class="flex-row item-row">
@@ -32,26 +32,8 @@
                 <span class="item-value">785469215863</span>
             </view>
             <view class="flex-row item-row">
-                <span class="item-label">锁所在区域：</span>
-                <span class="item-value">深圳市宝安区新安三路</span>
-            </view>
-        </view>
-        <view class="record-item">
-            <view class="flex-row item-row">
-                <span class="item-label">开 锁 人：</span>
-                <span class="item-value">深圳市古力开锁有限公司（张三）</span>
-            </view>
-            <view class="flex-row item-row">
-                <span class="item-label">开锁时间：</span>
-                <span class="item-value">2019-11-11 10:25:28</span>
-            </view>
-            <view class="flex-row item-row">
-                <span class="item-label">锁ID：</span>
-                <span class="item-value">785469215863</span>
-            </view>
-            <view class="flex-row item-row">
-                <span class="item-label">锁所在区域：</span>
-                <span class="item-value">深圳市宝安区新安三路</span>
+                <span class="item-label">动作：</span>
+                <span class="item-value">开锁</span>
             </view>
         </view>
     </view>

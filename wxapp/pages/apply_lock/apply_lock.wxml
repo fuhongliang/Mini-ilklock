@@ -67,7 +67,7 @@
             </view>
         </view>
 
-        <view style="padding-left:30rpx;padding-right:30rpx;">
+        <view bindtap="submitApply" style="padding-left:30rpx;padding-right:30rpx;">
             <view class="flex-row flex-x-center flex-y-center return-btn">
                 <text>提交申请</text>
             </view>

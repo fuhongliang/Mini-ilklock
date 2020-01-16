@@ -19,7 +19,7 @@
 
 <view class="index-option flex-row flex-y-center">
     <view class="flex-grow-0" style="width: 33.3%;">
-        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+        <view bindtap="authKey" class="option-item flex-grow-0 flex-x-center flex-y-center">
             <view class="flex-x-center">
                 <image class="option-icon" src="/images/index_option_lock_active.png"></image>
             </view>
@@ -29,7 +29,7 @@
         </view>
     </view>
     <view class="flex-grow-0" style="width: 33.3%;">
-        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+        <view bindtap="authOffline" class="option-item flex-grow-0 flex-x-center flex-y-center">
             <view class="flex-x-center">
                 <image class="option-icon" src="/images/index_option_link_active.png"></image>
             </view>
@@ -39,7 +39,7 @@
         </view>
     </view>
     <view class="flex-grow-0" style="width: 33.3%;">
-        <view class="option-item flex-grow-0 flex-x-center flex-y-center">
+        <view bindtap="clickWork" class="option-item flex-grow-0 flex-x-center flex-y-center">
             <view class="flex-x-center">
                 <image class="option-icon" src="/images/index_option_record_active.png"></image>
             </view>

@@ -3,19 +3,19 @@
         <view class="tab_bar_container">
             <scroll-view scroll-x="true" scroll-left="{{left}}">
                 <view class="flex-row flex-y-center tab-bar">
-                    <view class="tab-bar-item {{status==6? 'active':''}}">
+                    <view bindtap="clickType" data-type="0" class="tab-bar-item {{type === 0 ? 'active' : '' }}">
                         <text>待处理</text>
                     </view>
-                    <view class="tab-bar-item {{status==0? 'active':''}}">
+                    <view bindtap="clickType" data-type="1" class="tab-bar-item {{type === 1 ? 'active' : ''}}">
                         <text>已处理</text>
                     </view>
-                    <view class="tab-bar-item {{status==1 ? 'active':''}}">
+                    <view bindtap="clickType" data-type="2" class="tab-bar-item {{type === 2 ? 'active' : ''}}">
                         <text>已提交</text>
                     </view>
-                    <view class="tab-bar-item {{status==2?'active':''}}">
+                    <view bindtap="clickType" data-type="3" class="tab-bar-item {{type === 3 ? 'active' : ''}}">
                         <text>已批准</text>
                     </view>
-                    <view class="tab-bar-item {{status==3?'active':''}}">
+                    <view bindtap="clickType" data-type="4" class="tab-bar-item {{type === 4 ? 'active' : ''}}">
                         <text>未完成</text>
                     </view>
                 </view>
@@ -23,93 +23,62 @@
         </view>
 
         <view class="review-list">
-            <view class="item">
-                <view class="wrap">
-
-                    <view class="flex-row flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                <view class="review-title">
-                                    锁的名字锁的名字
+            <block wx:if="{{recordList[type].record.length > 0}}">
+                <view wx:for="{{recordList[type].record}}" wx:for-index="idx" wx:for-item="value" class="item">
+                    <view class="wrap">
+                        <view class="flex-row flex-y-center">
+                            <view class="flex-grow-1">
+                                <view>
+                                    <view class="review-title">
+                                        {{value.lock_name}}
+                                    </view>
+                                    <view wx:if="{{type === 0}}" class="review-status" style="color:#36B6F9;border:1rpx solid #36B6F9;">
+                                        {{value.status}}
+                                    </view>
+                                    <view wx:if="{{type === 1}}" class="review-status" style="color:#03D098;border:1rpx solid #03D098;">
+                                        {{value.status}}
+                                    </view>
+                                    <view wx:if="{{type === 2}}" class="review-status" style="color:#36B6F9;border:1rpx solid #36B6F9;">
+                                        {{value.status}}
+                                    </view>
+                                    <view wx:if="{{type === 3}}" class="review-status" style="color:#03D098;border:1rpx solid #03D098;">
+                                        {{value.status}}
+                                    </view>
+                                    <view wx:if="{{type === 4}}" class="review-status" style="color:#F93636;border:1rpx solid #F93636;">
+                                        {{value.status}}
+                                    </view>
                                 </view>
-                                <view class="review-status">
-                                    待处理
+                            </view>
+                        </view>
+                        <view class="flex-row sub-title flex-y-center">
+                            <view class="flex-grow-1">
+                                <view>
+                                    申请区域：{{value.region_name}}
                                 </view>
                             </view>
                         </view>
-                        <view class="flex-grow-0">
-                            <view class="review-time">
-                                11-14
+                        <view class="flex-row sub-title flex-y-center">
+                            <view class="flex-grow-1">
+                                <view>
+                                    申请人：{{value.user_name}}
+                                </view>
                             </view>
                         </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请区域：一级区域名称/二级区域名称
-                            </view>
-                        </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请人：朱翰墨
-                            </view>
-                        </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请时间：2019-01-14 14:00
+                        <view class="flex-row sub-title flex-y-center">
+                            <view class="flex-grow-1">
+                                <view>
+                                    申请时间：{{value.addtime}}
+                                </view>
                             </view>
                         </view>
                     </view>
                 </view>
-            </view>
-
-            <view class="item">
-                <view class="wrap">
-                    <view class="flex-row flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                <view class="review-title">
-                                    锁的名字锁的名字
-                                </view>
-                                <view class="review-status">
-                                    待处理
-                                </view>
-                            </view>
-                        </view>
-                        <view class="flex-grow-0">
-                            <view class="review-time">
-                                11-14
-                            </view>
-                        </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请区域：一级区域名称/二级区域名称
-                            </view>
-                        </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请人：朱翰墨
-                            </view>
-                        </view>
-                    </view>
-                    <view class="flex-row sub-title flex-y-center">
-                        <view class="flex-grow-1">
-                            <view>
-                                申请时间：2019-01-14 14:00
-                            </view>
-                        </view>
-                    </view>
+            </block>
+            <block wx:else >
+                <view class="flex-row flex-y-center flex-x-center" style="padding:20rpx;color:#cccccc;font-size:24rpx;">
+                    暂无数据
                 </view>
-            </view>
-
+            </block>
         </view>
 
         <view bindtap="clickCreate" class="float-icon">

@@ -6,7 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"enhance": true,
+		"enhance": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
@@ -26,7 +26,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wx2e32ee858cf18163",
+	"appid": "wx9e0bbe8a90a48517",
 	"projectname": "%E8%89%BE%E4%B9%90%E7%A7%91%E6%99%BA%E8%83%BD%E9%94%81",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -125,6 +125,20 @@
 					"id": -1,
 					"name": "锁列表",
 					"pathName": "pages/lock_list/lock_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "作业管理",
+					"pathName": "pages/work/work",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权钥匙",
+					"pathName": "pages/auth_key/auth_key",
 					"scene": null
 				}
 			]

@@ -16,6 +16,24 @@ Page({
     app.page.onLoad(this, options);
   },
 
+  authKey() {
+    wx.navigateTo({
+      url: '/pages/auth_key/auth_key',
+    })
+  },
+
+  authOffline() {
+    wx.navigateTo({
+      url: '/pages/auth_key/auth_key',
+    })
+  },
+
+  clickWork() {
+    wx.navigateTo({
+      url: '/pages/work/work',
+    })
+  },
+
   clickLink() {
     this.setData({
       showLinkModal:true,
