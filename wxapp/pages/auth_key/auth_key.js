@@ -20,13 +20,14 @@ Page({
     selectAll:function() {
         let lockList = this.data.lockList;
         let tmp = lockList;
+        let status = this.data.selectAll === false;
         for(let index in lockList) {
             let locks = lockList[index]
-            locks.selected = true;
+            locks.selected = status
             tmp[index] = locks
         };
         this.setData({
-            selectAll: true,
+            selectAll: status,
             lockList: tmp
         })
     },
