@@ -12,13 +12,33 @@ page{
     z-index: 100;
     overflow: hidden;
 }
-
+.add-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    padding: 0 8px;
+    line-height: 88rpx;
+    height: 88rpx;
+    font-size: 26px;
+    text-align: center;
+    background: #fff;
+    box-shadow: -2px 0px 10px #ccc;
+}
+.padding-35 {
+    padding-right: 35px;
+    line-height: 88rpx;
+    height: 88rpx;
+}
 .tab-bar {
     height: 88rpx;
-    width:1000rpx;
+    padding-right: 25px;
+    flex-wrap: nowrap;
+    /* width:1000rpx; */
 }
 .tab-bar-item{
     padding: 0 35rpx;
+    white-space: nowrap;
 }
 
 .tab-bar-item text {

@@ -34,7 +34,7 @@
                 <image class="option-icon" src="/images/index_option_link_active.png"></image>
             </view>
             <view class="flex-x-center text-more-2 option-name active">
-                离线授权
+                离线获取授权
             </view>
         </view>
     </view>

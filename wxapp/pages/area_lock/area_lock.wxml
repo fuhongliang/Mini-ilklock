@@ -8,8 +8,10 @@
                             <text>{{value.name}}</text>
                         </view>
                     </block>
+                    <view class="padding-35"></view>
                 </view>
             </scroll-view>
+            <view class="add-wrap" bindtap="handleAddLock">+</view>
         </view>
         <view class="area-list">
             <view class="item" wx:for="{{secondArea}}" wx:for-index="idx" wx:for-item="value">

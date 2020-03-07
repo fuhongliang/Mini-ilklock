@@ -6,7 +6,7 @@
     <view class="flex-row" style="padding-top: 12rpx;">
       <view class="flex-grow-1 text-row">
         <view class="flex-row">
-          <view class="flex-grow-1">艾乐科无源碧锁</view>
+          <view class="flex-grow-1">艾乐科无源闭锁</view>
         </view>
         <view class="flex-row">
           <view class="flex-grow-1">智能管理</view>

@@ -11,7 +11,15 @@
                             <view class="row-content">李璨领导</view>
                         </view>
                         <view class="flex-row item-content">
-                            <view class="row-label">开锁顺序：</view>
+                            <view class="row-label">锁顺序：</view>
+                            <view class="row-content">锁1 → 锁2 → 锁3</view>
+                        </view>
+                        <view class="flex-row item-content">
+                            <view class="row-label">已完成：</view>
+                            <view class="row-content">无</view>
+                        </view>
+                        <view class="flex-row item-content">
+                            <view class="row-label">待完成：</view>
                             <view class="row-content">锁1 → 锁2 → 锁3</view>
                         </view>
                         <view class="flex-row item-content">
@@ -19,8 +27,7 @@
                             <view class="row-content">2019-12-12 12:12:12</view>
                         </view>
                         <view class="flex-row item-footer flex-y-center">
-                            <view class="start-btn flex-y-center flex-x-center">开始</view>
-                            <view class="cancel-btn flex-y-center flex-x-center">取消</view>
+                            <view class="start-btn flex-y-center flex-x-center" bindtap="handleImportWork">开始作业</view>
                         </view>
                     </view>
                 </view>
@@ -33,16 +40,23 @@
                             <view class="row-content">李璨领导</view>
                         </view>
                         <view class="flex-row item-content">
-                            <view class="row-label">开锁顺序：</view>
+                            <view class="row-label">锁顺序：</view>
                             <view class="row-content">锁1 → 锁2 → 锁3</view>
+                        </view>
+                        <view class="flex-row item-content">
+                            <view class="row-label">已完成：</view>
+                            <view class="row-content">锁1 → 锁2</view>
+                        </view>
+                        <view class="flex-row item-content">
+                            <view class="row-label">待完成：</view>
+                            <view class="row-content">锁3</view>
                         </view>
                         <view class="flex-row item-content">
                             <view class="row-label">生成时间：</view>
                             <view class="row-content">2019-12-12 12:12:12</view>
                         </view>
                         <view class="flex-row item-footer flex-y-center">
-                            <view class="start-btn flex-y-center flex-x-center">开始</view>
-                            <view class="cancel-btn flex-y-center flex-x-center">取消</view>
+                            <view class="start-btn flex-y-center flex-x-center" bindtap="handleImportWork">继续作业</view>
                         </view>
                     </view>
                 </view>

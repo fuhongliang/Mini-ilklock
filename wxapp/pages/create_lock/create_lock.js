@@ -7,13 +7,18 @@ Page({
         multiIndex: [],
         region_id: "",
         lock_name: "",
-        lock_no: Math.random().toString(32).substr(2),
+        lock_no: "",
     },
     onLoad: function (options) {
         app.page.onLoad(this, options);
         this.getFirstArea()
     },
     onShow:function() {
+        setTimeout(() => {
+            this.setData({
+                lock_no: Math.floor(Math.random() * 100000000).toString(16),
+            })
+        }, 3000);
     },
     getFirstArea: ()=> {
         app.api.area.getArea({id: 0})

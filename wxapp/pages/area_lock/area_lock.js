@@ -123,6 +123,11 @@ Page({
                 }
             }).then(()=>{console.log('test----', app.page.currentPage.data)});
     },
+    handleAddLock() {
+        wx.navigateTo({
+            url: '/pages/create_lock/create_lock',
+        });
+    }
 
 
 });

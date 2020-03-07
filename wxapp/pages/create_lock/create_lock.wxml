@@ -5,7 +5,8 @@
                 锁ID
             </view>
             <view class="flex-grow-0">
-                {{lock_no}}
+                <text selectable="{{true}}" wx:if="{{lock_no}}">{{lock_no}}</text>
+                <text selectable="{{false}}" wx:else style="color:#ccc">使用钥匙连接锁后自动获取</text>
             </view>
         </view>
 
@@ -33,7 +34,7 @@
                 锁名称
             </view>
             <view class="flex-grow-0">
-                <input bindinput="keyLockName" name="lock_name" placeholder="请输入锁名称" value="{{lock_name}}" placeholder-style="color:#cccccc;text-align:right;"></input>
+                <input bindinput="keyLockName" name="lock_name" placeholder="请输入锁名称" value="{{lock_name}}" placeholder-style="color:#cccccc;text-align:right;" style="text-align:right;"></input>
             </view>
         </view>
 
