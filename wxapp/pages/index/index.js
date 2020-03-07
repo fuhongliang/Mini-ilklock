@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+import connector from '../../utils/ble-connector';
 const app = getApp()
 
 Page({
@@ -10,7 +11,20 @@ Page({
     confirmBtn: "开启蓝牙",
     isLinked:false,
     allowLinkBtn: "授权",
-    showLinkModal: true,
+    showLinkModal: false,
+  },
+
+  onShow: function() {
+    this.setData({ isLinked: connector.status.connected });
+    connector.off('close');
+    connector.off('connected');
+
+    connector.on('close', () => {
+      this.setData({ isLinked: false });
+    });
+    connector.on('connected', () => {
+      this.setData({ isLinked: true });
+    });
   },
   onLoad: function (options) {
     app.page.onLoad(this, options);
@@ -35,9 +49,12 @@ Page({
   },
 
   clickLink() {
-    this.setData({
-      showLinkModal:true,
-    })
+    // this.setData({
+    //   showLinkModal:true,
+    // })
+    wx.navigateTo({
+      url: '/pages/device-select/device-select',
+    });
   },
   cancelLinkModal(e) {
   },

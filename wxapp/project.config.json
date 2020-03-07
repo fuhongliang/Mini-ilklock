@@ -6,7 +6,7 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"enhance": false,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
@@ -139,6 +139,14 @@
 					"id": -1,
 					"name": "授权钥匙",
 					"pathName": "pages/auth_key/auth_key",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "选择蓝牙设备",
+					"pathName": "pages/device-select/device-select",
+					"query": "",
 					"scene": null
 				}
 			]

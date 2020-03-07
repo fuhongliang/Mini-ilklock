@@ -13,13 +13,18 @@
     "pages/auditor/auditor",
     "pages/work/work",
     "pages/auth_key/auth_key",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/device-select/device-select"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-cell": "./components/vant/cell/index",
+    "van-cell-group": "./components/vant/cell-group/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,23 @@
+<!--pages/device-select/device-select.wxml-->
+<view class="card-container">
+  <!-- <ble-connection></ble-connection> -->
+  <van-cell-group title="请选择钥匙">
+    <van-cell wx:for="{{devices}}" 
+      wx:for-item="item"
+      wx:key="deviceId"
+      title="{{item.name}}({{item.RSSI}}dBm)" 
+      data-device-id="{{item.deviceId}}"
+      data-name="{{item.name}}"
+      bind:click="onConnectTo" is-link />
+    <!-- <view wx:for="{{devices}}" wx:key="index"
+        data-device-id="{{item.deviceId}}"
+        data-name="{{item.name || item.localName}}"
+        bindtap="createBLEConnection" 
+        class="device_item"
+        hover-class="device_item_hover">
+          <view style="font-size: 16px; color: #333;">{{item.name}}</view>
+          <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm ({{item.signal}}%)</view>
+          <view style="font-size: 10px">UUID: {{item.deviceId}}</view>
+        </view> -->
+  </van-cell-group>
+</view>
