@@ -8,9 +8,9 @@ Page({
     },
     onLoad: function (options) {
         app.page.onLoad(this, options);
+        //todo 换成获取所有锁接口
         app.api.lock.getAuthKeys()
             .then(data => {
-                console.log(data)
                 if (data.code === 0) {
                     app.page.currentPage.setData({
                         lockList: data.data.list

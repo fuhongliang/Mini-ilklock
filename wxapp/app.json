@@ -13,6 +13,7 @@
     "pages/auditor/auditor",
     "pages/work/work",
     "pages/auth_key/auth_key",
+    "pages/offline/offline",
     "pages/logs/logs",
     "pages/device-select/device-select"
   ],

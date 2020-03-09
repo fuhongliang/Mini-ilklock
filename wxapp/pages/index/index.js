@@ -38,7 +38,7 @@ Page({
 
   authOffline() {
     wx.navigateTo({
-      url: '/pages/auth_key/auth_key',
+      url: '/pages/offline/offline',
     })
   },
 
