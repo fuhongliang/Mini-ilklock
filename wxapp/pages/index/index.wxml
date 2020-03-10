@@ -24,75 +24,23 @@
 
     <view class="record-list">
 
-      <view class="flex-row record-item flex-y-center">
+      <block wx:if="{{logs.length > 0}}">
+      <view wx:for="{{logs}}" wx:for-index="idx" wx:for-item="value" class="flex-row record-item flex-y-center">
         <view class="flex-grow-1">
           <view class="flex-row item-title">
-            珠江市香洲区/锁的名字
+            {{value.area_name}}/{{value.lock_name}}
           </view>
           <view class="flex-row item-time">
-            2019年08月29日 20:58:04
+            {{value.log_time}}
           </view>
-        </view>
-        <view class="flex-row-0 record-action">
-          <text>开锁</text>
         </view>
       </view>
-
-      <view class="flex-row record-item flex-y-center">
-        <view class="flex-grow-1">
-          <view class="flex-row item-title">
-            珠江市香洲区/锁的名字
-          </view>
-          <view class="flex-row item-time">
-            2019年08月29日 20:58:04
-          </view>
+      </block>
+      <block wx:else>
+        <view class="flex-row flex-y-center flex-x-center" style="padding:20rpx;color:#cccccc;font-size:22rpx;">
+          暂无操作记录
         </view>
-        <view class="flex-row-0 record-action">
-          <text>开锁</text>
-        </view>
-      </view>
-
-      <view class="flex-row record-item flex-y-center">
-        <view class="flex-grow-1">
-          <view class="flex-row item-title">
-            珠江市香洲区/锁的名字
-          </view>
-          <view class="flex-row item-time">
-            2019年08月29日 20:58:04
-          </view>
-        </view>
-        <view class="flex-row-0 record-action">
-          <text>开锁</text>
-        </view>
-      </view>
-
-      <view class="flex-row record-item flex-y-center">
-        <view class="flex-grow-1">
-          <view class="flex-row item-title">
-            珠江市香洲区/锁的名字
-          </view>
-          <view class="flex-row item-time">
-            2019年08月29日 20:58:04
-          </view>
-        </view>
-        <view class="flex-row-0 record-action">
-          <text>开锁</text>
-        </view>
-      </view>
-
-      <view class="flex-row record-item flex-y-center">
-        <view class="flex-grow-1">
-          <view class="flex-row item-title">
-            珠江市香洲区/锁的名字
-          </view>
-          <view class="flex-row item-time">
-            2019年08月29日 20:58:04
-          </view>
-        </view>
-        <view class="flex-row-0 record-action">
-          <text>开锁</text>
-        </view>
-      </view>
+      </block>
 
     </view>
 

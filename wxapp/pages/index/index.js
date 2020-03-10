@@ -12,6 +12,7 @@ Page({
     isLinked:false,
     allowLinkBtn: "授权",
     showLinkModal: false,
+    logs:[],
   },
 
   onShow: function() {
@@ -28,6 +29,15 @@ Page({
   },
   onLoad: function (options) {
     app.page.onLoad(this, options);
+    app.api.lock.getLogs()
+        .then(data => {
+          console.log(data)
+          if (data.code === 0) {
+            app.page.currentPage.setData({
+              logs: data.data.list
+            })
+          }
+        });
   },
 
   authKey() {

@@ -5,7 +5,7 @@ const app = getApp()
 Page({
     data: {
         motto: 'Hello World',
-        logs:{},
+        logs:[],
     },
     onLoad: function (options) {
         app.page.onLoad(this, options);

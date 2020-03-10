@@ -1,23 +1,26 @@
 <view class="page">
     <view class="body after-navber">
-        <view class="record-item">
-            <view class="flex-row item-row">
-                <span class="item-label">锁所在区域：</span>
-                <span class="item-value">深圳市宝安区新安三路</span>
+       <block wx:if="{{logs.length > 0}}">
+           <view wx:for="{{logs}}" wx:for-index="idx" wx:for-item="value" class="record-item">
+               <view class="flex-row item-row">
+                   <span class="item-label">锁所在区域：</span>
+                   <span class="item-value">{{value.area_name}}</span>
+               </view>
+               <view class="flex-row item-row">
+                   <span class="item-label">操作时间：</span>
+                   <span class="item-value">{{value.log_time}}</span>
+               </view>
+               <view class="flex-row item-row">
+                   <span class="item-label">锁名称：</span>
+                   <span class="item-value">{{value.lock_name}}</span>
+               </view>
+           </view>
+       </block>
+        <block wx:else>
+            <view class="flex-row flex-y-center flex-x-center" style="padding:20rpx;color:#cccccc;">
+                暂无数据
             </view>
-            <view class="flex-row item-row">
-                <span class="item-label">操作时间：</span>
-                <span class="item-value">2019-11-11 10:25:28</span>
-            </view>
-            <view class="flex-row item-row">
-                <span class="item-label">锁ID：</span>
-                <span class="item-value">785469215863</span>
-            </view>
-            <view class="flex-row item-row">
-                <span class="item-label">动作：</span>
-                <span class="item-value">开锁</span>
-            </view>
-        </view>
+        </block>
     </view>
     <include src="/commons/navbar/navbar"></include>
 </view>
