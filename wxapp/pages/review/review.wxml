@@ -4,10 +4,10 @@
             <scroll-view scroll-x="true" scroll-left="{{left}}">
                 <view class="flex-row flex-y-center tab-bar">
                     <view bindtap="clickType" data-type="0" class="tab-bar-item {{type === 0 ? 'active' : '' }}">
-                        <text>待处理</text>
+                        <text>待审批</text>
                     </view>
                     <view bindtap="clickType" data-type="1" class="tab-bar-item {{type === 1 ? 'active' : ''}}">
-                        <text>已处理</text>
+                        <text>已审批</text>
                     </view>
                     <view bindtap="clickType" data-type="2" class="tab-bar-item {{type === 2 ? 'active' : ''}}">
                         <text>已提交</text>
@@ -16,7 +16,7 @@
                         <text>已批准</text>
                     </view>
                     <view bindtap="clickType" data-type="4" class="tab-bar-item {{type === 4 ? 'active' : ''}}">
-                        <text>未完成</text>
+                        <text>已拒绝</text>
                     </view>
                 </view>
             </scroll-view>
@@ -33,19 +33,19 @@
                                         {{value.lock_name}}
                                     </view>
                                     <view wx:if="{{type === 0}}" class="review-status" style="color:#36B6F9;border:1rpx solid #36B6F9;">
-                                        {{value.status}}
+                                        待审批
                                     </view>
                                     <view wx:if="{{type === 1}}" class="review-status" style="color:#03D098;border:1rpx solid #03D098;">
-                                        {{value.status}}
+                                        已审批
                                     </view>
                                     <view wx:if="{{type === 2}}" class="review-status" style="color:#36B6F9;border:1rpx solid #36B6F9;">
-                                        {{value.status}}
+                                        已提交
                                     </view>
                                     <view wx:if="{{type === 3}}" class="review-status" style="color:#03D098;border:1rpx solid #03D098;">
-                                        {{value.status}}
+                                        已批准
                                     </view>
                                     <view wx:if="{{type === 4}}" class="review-status" style="color:#F93636;border:1rpx solid #F93636;">
-                                        {{value.status}}
+                                        已拒绝
                                     </view>
                                 </view>
                             </view>
@@ -71,6 +71,12 @@
                                 </view>
                             </view>
                         </view>
+
+                        <view wx:if="{{type === 0}}" class="flex-row flex-y-center"  style="margin-top:20rpx;">
+                            <view bindtap="reviewApply" data-id="{{value.id}}" data-status="-1" style="padding: 10rpx 20rpx;background:#F93636;border-radius:6rpx; color:#ffffff;font-size:27rpx;">拒绝</view>
+                            <view bindtap="reviewApply" data-id="{{value.id}}" data-status="1" style="padding: 10rpx 20rpx;background:#00CA7C;border-radius:6rpx; color:#ffffff;font-size:27rpx;margin-left:20rpx;">通过</view>
+                        </view>
+
                     </view>
                 </view>
             </block>

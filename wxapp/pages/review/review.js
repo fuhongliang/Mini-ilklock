@@ -56,6 +56,20 @@ Page({
         wx.navigateTo({
             url: '/pages/apply_lock/apply_lock',
         })
+    },
+
+    reviewApply:function (e) {
+        let id = e.currentTarget.dataset.id
+        let status = e.currentTarget.dataset.status
+        app.api.lock.authOpenLock({status:status, id:id})
+            .then(data => {
+                if (data.code === 0) {
+                    app.message.success('审批成功')
+                    wx.navigateTo({
+                        url: '/pages/review/review'
+                    })
+                }
+            });
     }
 
 

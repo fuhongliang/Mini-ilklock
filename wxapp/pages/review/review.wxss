@@ -34,6 +34,8 @@ page{
 .review-list {
     margin-top: 110rpx;
     background-color: #ffffff;
+    height: 100%;
+    margin-bottom: 100px;
 }
 
 .review-list .item .wrap {

@@ -8,7 +8,8 @@ let url = {
     applyLock: "apply_open_lock",
     reviewList: "list_apply",
     getKey: "get_keys",
-    createLog: "log"
+    createLog: "log",
+    authOpenLock: "auth_open_lock",
 }
 
 module.exports = {
@@ -19,5 +20,6 @@ module.exports = {
     updateLockName(params) {return http({url: url.updateLockName, data: params, method: "POST"})},
     getLogs(params) {return http({url: url.logs, data: params, method: "POST"})},
     getAuthKeys(params) {return http({url: url.getKey, data: params, method: "POST"})},
-    createLog(params) {return http({url: url.createLog, data: params, method: "POST"})}
+    createLog(params) {return http({url: url.createLog, data: params, method: "POST"})},
+    authOpenLock(params) {return http({url: url.authOpenLock, data: params, method: "POST"})}
 }
